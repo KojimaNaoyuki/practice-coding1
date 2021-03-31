@@ -1,0 +1,27 @@
+.white-box {
+  max-width: 300px;
+}
+
+.global-content {
+  & .mv {
+    &__inner {
+      & > h1 {
+        right: 40px;
+      }
+    }
+  }
+  & .about {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    max-width: 1060px;
+  }
+  & .features {
+    &__inner {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+  }
+}
