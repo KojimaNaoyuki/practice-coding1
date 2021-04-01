@@ -51,6 +51,16 @@ body p {
   padding: 3px 0;
 }
 
+body a {
+  margin: 0;
+  color: black;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .content-width, .white-box__inner, .title, .global-content .about__inner {
   width: 90%;
   margin: 0 auto;
@@ -76,6 +86,39 @@ body p {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+}
+
+.global-content {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.global-content .mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: #284269;
+  z-index: 50;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.global-content .mobile-menu > h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #9c9c9c;
+}
+
+.global-content .mobile-menu > h2 > a {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c7c7c7;
+  line-height: 100px;
 }
 
 .global-content .header {
@@ -129,6 +172,10 @@ body p {
   border-bottom: solid 1px #a0a0a0;
 }
 
+.global-content .about {
+  padding-top: 10px;
+}
+
 .global-content .about__inner {
   padding: 20px 0;
 }
@@ -147,6 +194,12 @@ body p {
   line-height: 38px;
   font-size: 16px;
   color: #dadada;
+}
+
+.drawer-menu-icon-burger-open .mobile-menu {
+  padding-top: 150px;
+  -webkit-transform: none;
+          transform: none;
 }
 
 @media (min-width: 1000px) {
