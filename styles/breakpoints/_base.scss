@@ -15,11 +15,6 @@ body {
   a {
     margin: 0;
     color: black;
-
-    &:hover {
-      text-decoration: none;
-      color: black;
-    }
   }
 }
 
@@ -93,6 +88,10 @@ body {
       font-size: 30px;
       line-height: 45px;
     }
+
+    & .pc-menu {
+      display: none;
+    }
   }
 
   & .mv {
@@ -155,10 +154,5 @@ body {
   & .mobile-menu {
     padding-top: 150px;
     transform: none;
-
-    & > h2 {
-      & > a {
-      }
-    }
   }
 }

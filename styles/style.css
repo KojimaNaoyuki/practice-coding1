@@ -56,11 +56,6 @@ body a {
   color: black;
 }
 
-body a:hover {
-  text-decoration: none;
-  color: black;
-}
-
 .content-width, .white-box__inner, .title, .global-content .about__inner {
   width: 90%;
   margin: 0 auto;
@@ -142,6 +137,10 @@ body a:hover {
   line-height: 45px;
 }
 
+.global-content .header .pc-menu {
+  display: none;
+}
+
 .global-content .mv {
   position: relative;
   width: 100%;
@@ -205,6 +204,36 @@ body a:hover {
 @media (min-width: 1000px) {
   .white-box {
     max-width: 300px;
+  }
+  .global-content .header .pc-menu {
+    display: block;
+  }
+  .global-content .header .pc-menu > nav {
+    height: 100%;
+  }
+  .global-content .header .pc-menu > nav > ul {
+    height: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+  }
+  .global-content .header .pc-menu > nav > ul > li {
+    padding: 0 15px;
+    font-weight: bold;
+    color: #353535;
+  }
+  .global-content .header .pc-menu > nav > ul > li > a {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  .global-content .header .drawer-menu-icon-burger {
+    display: none;
   }
   .global-content .mv__inner > h1 {
     right: 40px;
